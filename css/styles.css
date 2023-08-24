@@ -1,0 +1,49 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    max-width: 600px;
+    border: 10px solid #fafafa;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card img{
+    width: 300px;
+    object-fit: cover;
+}
+
+.card-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.card-body,
+.card-footer
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+.card-footer{
+    display: flex;
+    gap: 10px;
+}
+
+.card-btn{
+    background: darkcyan;
+    color: whitesmoke;
+    padding: 1em 1.35em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width:675px){
+    .card{
+        flex-direction: row;
+    }
+}
+
