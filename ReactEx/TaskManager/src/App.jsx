@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import MyButton from './components/MyButton'
 
 let message = "Hello React!"
 
@@ -14,8 +12,12 @@ function App() {
   //JSX syntax
   return (
     <div>
+      {new Date().getHours() % 12}
       <Hello />
       <Hello />
+      <MyButton title="Signup" type="large" />
+      <br />
+      <MyButton title="Login" type="large" />
     </div>
   )
 }
