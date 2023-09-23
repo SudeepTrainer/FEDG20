@@ -1,4 +1,4 @@
 import ReactDOM from 'react-dom/client'
-import SimpleState from './components/SimpleState.jsx'
+import Tasks from './components/Tasks.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(<SimpleState />)
+ReactDOM.createRoot(document.getElementById('root')).render(<Tasks />)

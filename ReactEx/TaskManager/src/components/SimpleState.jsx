@@ -1,8 +1,11 @@
+import { useState } from "react";
 import "./style.css"
 function SimpleState() {
-    const isReactImportant = false;
+    let [isReactImportant, setIsReactImportant] = useState(true);
+    console.log(isReactImportant);
     function handleClick() {
-        console.log("Button Clicked");
+        // isReactImportant = false;
+        setIsReactImportant(prevValue => !prevValue)
     }
     return (
         <div>
